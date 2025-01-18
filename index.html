@@ -3,9 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon</title>
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>New Portfolio Website Coming Soon</h1>
+    <header class="header">
+        <div class="profile-section">
+            <img src="My Photo.jpg" alt="Profile Picture" class="profile-pic">
+            <div class="info">
+                <h1 class="name">Shahajalal Islam</h1>
+                <p class="subject">Computer Science</p>
+                <p class="school">University of Washington</p>
+            </div>
+        </div>
+        <img src="UW.png" alt="University of Washington" class="university-logo">
+    </header>
+
+    <main class="main-container">
+        <div class="left-column">
+            <nav class="navbar">
+                <a href="">About Me</a>
+                <a href="">My Experiences</a>
+                <a href="">My Projects</a>
+            </nav>
+            <section id="about-me" class="section">
+                <h2>About Me</h2>
+                <p>
+                    Hello everyone welcome to my profile! My name is Shahajalal Islam, I'm a Bangladeshi-American living in Seattle, WA. 
+                    As a Computer Science Student at University of Washington's Paul G. Allen School of Computer Science & Engineering, 
+                    I am motivated by a strong passion for technology and a desire to make a positive impact. My journey in the tech industry 
+                    began with an internship at Microsoft as part of the Discovery Program, where I explored various fields, gaining exposure 
+                    to software development, project management, and user interface/experience design. This experience allowed me to refine 
+                    both my technical and interpersonal skills. I bring a strong work ethic, critical thinking for problem-solving, a growth 
+                    mindset, and a collaborative spirit to every project, consistently striving for excellence. I excel in both team environments 
+                    and individual projects, effectively contributing to collective goals and independently tackling challenges. Committed to 
+                    continuous learning and innovation, I am adaptable and eager to embrace new challenges, making me a valuable asset to your team.
+                </p>
+            </section>
+
+            <section id="skills" class="section">
+                <h2>Skills</h2>
+                <h3>Technical Skills</h3>
+                <ul>
+                    <li>Java, Python, HTML, CSS, JS, Figma</li>
+                </ul>
+                <h3>Industry Knowledge</h3>
+                <ul>
+                    <li>Coding, UI/UX Design & Prototyping, Microsoft Office, Google Workspace</li>
+                </ul>
+                <h3>Interpersonal Skills</h3>
+                <ul>
+                    <li>Team Collaboration, Problem-Solving, Leadership, Adaptability, Research & Analysis</li>
+                    <li>Communication, Time Management, Networking, Critical Thinking, Growth-Mindset</li>
+                </ul>
+            </section>
+
+            <div class="centered-button">
+                <a href="resume.pdf" target="_blank" class="button large">View Resume</a>
+            </div>
+
+            <footer class="footer">
+                <p>&copy; 2025 Shahajalal Islam. All rights reserved.</p>
+            </footer>
+        </div>
+
+        <div class="right-column">
+            <section id="connect-with-me" class="connect-with-me section">
+                <h2>Connect with Me</h2>
+                <a href="https://www.linkedin.com" target="_blank" class="button social">
+                    <img src="LinkedIn.png" alt="LinkedIn Icon" class="social-icon"> LinkedIn
+                </a>
+                <a href="https://www.github.com" target="_blank" class="button social">
+                    <img src="Github.png" alt="GitHub Icon" class="social-icon"> GitHub
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="button social">
+                    <img src="Instagram.png" alt="Instagram Icon" class="social-icon"> Instagram
+                </a>
+                <a href="https://www.facebook.com" target="_blank" class="button social">
+                    <img src="Facebook.png" alt="Facebook Icon" class="social-icon"> Facebook
+                </a>
+            </section>
+            <section id="contact-me" class="contact-form section">
+                <h2>Contact Me</h2>
+                <form action="#" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    
+                    <button type="submit" class="button">Send Message</button>
+                </form>
+            </section>
+        </div>
+    </main>
 </body>
 </html>
